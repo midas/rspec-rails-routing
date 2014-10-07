@@ -30,11 +30,11 @@ module RspecRailsRouting
           end
         end
 
-        def failure_message_for_should
+        def failure_message
           "expected #{example_call} to equal #{@expected_uri}, but got #{@actual_uri}"
         end
 
-        def failure_message_for_should_not
+        def failure_message_when_negated
           "expected #{example_call} to not equal #{@expected_uri}, but it did"
         end
 
